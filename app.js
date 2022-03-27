@@ -2,11 +2,11 @@ let count = 0;
 
 const value = document.querySelector('#value');
 
-const btns = document.querySelectorAll('.btn')
+const buttons = document.querySelectorAll('.btn')
 
-console.log(btns)
+console.log(buttons)
 
-btns.forEach((btn) => btn.addEventListener('click', (e) => {
+buttons.forEach((btn) => btn.addEventListener('click', (e) => {
     const styles = e.currentTarget.classList;
     if (styles.contains('decrease')){
         count--;
